@@ -11,9 +11,12 @@ public class playerController : MonoBehaviour {
     private Vector3 moveDirection;
     public float gravityScale;
 
+    private Animator anim;
+
 	// Use this for initialization
 	void Start () {
         controller = GetComponent<CharacterController>();
+        anim = this.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -28,13 +31,15 @@ public class playerController : MonoBehaviour {
             moveDirection.y = 0;
             if (Input.GetButtonDown("Jump"))
             {
+                anim.SetTrigger("Jump");
                 moveDirection.y = verticalVelocity;
                 Debug.Log("Jumping");
             }
         }
-        
 
+        
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale);
         controller.Move(moveDirection * Time.deltaTime);
-	}
+        anim.SetFloat("Speed", z);
+    }
 }

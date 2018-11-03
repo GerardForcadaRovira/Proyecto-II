@@ -21,10 +21,10 @@ public class camController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        float horizontal = Input.GetAxis("MouseX") * rotateSpeed;
+        float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
         target.Rotate(0, horizontal, 0);
 
-        float vertical = Input.GetAxis("MouseY") * rotateSpeed;
+        float vertical = Input.GetAxis("Mouse Y") * rotateSpeed;
         target.Rotate(-vertical, 0, 0);
 
         float desiredYAngle = target.eulerAngles.y;

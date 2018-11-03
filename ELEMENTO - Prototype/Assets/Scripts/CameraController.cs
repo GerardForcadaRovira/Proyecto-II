@@ -43,6 +43,7 @@ public class CameraController : MonoBehaviour
 
         target.eulerAngles = e;
         transform.position = target.position - transform.forward * distFromTarget;
+        transform.position = new Vector3(transform.position.x , transform.position.y + 2, transform.position.z);
     }
 
 }
