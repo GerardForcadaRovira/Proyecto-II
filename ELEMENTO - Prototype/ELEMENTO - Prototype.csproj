@@ -303,10 +303,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\playerStats.cs" />
     <Compile Include="Assets\Scripts\camController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\characterMovement.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\playerAttack.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
+    <Compile Include="Assets\Scripts\playerController2.cs" />
     <Compile Include="Assets\Scripts\playerInteracts.cs" />
+    <Compile Include="Assets\Scripts\QuitOnClick.cs" />
+    <Compile Include="Assets\Scripts\rotation.cs" />
+    <Compile Include="Assets\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts\testMovementRB.cs" />
   </ItemGroup>
   <ItemGroup>
