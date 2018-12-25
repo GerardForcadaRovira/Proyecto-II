@@ -45,7 +45,7 @@ public class playerInteracts : MonoBehaviour {
         {
             textButton.SetActive(true);
 
-            if (Input.GetKey(KeyCode.E))//tecla para activacion playerStats.hasItem
+            if (Input.GetKey(KeyCode.E) && playerStats.hasItem)//tecla para activacion
             {
                 if (itemInteract2 != null)
                 {
@@ -57,10 +57,6 @@ public class playerInteracts : MonoBehaviour {
             else if (Input.GetKey(KeyCode.E) && itemInteract2 != null)
             {
                 StartCoroutine(showDiag(itemTextNo));
-            }
-            else if (Input.GetKey(KeyCode.E) && itemInteract2 == null)
-            {
-                isPressed = true;
             }
         }
         else

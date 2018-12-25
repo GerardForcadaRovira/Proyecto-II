@@ -11,7 +11,6 @@ public class playerAttack : MonoBehaviour {
     public LayerMask whatIsEnemy;
     public int damage;
     #endregion
-
     // Use this for initialization
     void Start () {
         anim = gameObject.GetComponent<Animator>();
@@ -24,15 +23,10 @@ public class playerAttack : MonoBehaviour {
             Collider[] enemiesToDamage = Physics.OverlapSphere(attackPos.position, attackRange, whatIsEnemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                //enemiesToDamage[i].GetComponent<Enemy>().health -= damage;
-                //Debug.Log(enemiesToDamage[i].GetComponent<Enemy>().health);
+                enemiesToDamage[i].GetComponent<Enemy>().health -= damage;
+                Debug.Log(enemiesToDamage[i].GetComponent<Enemy>().health);
             }
             attack();
-        }
-
-        if (Input.GetButtonDown("Fire2"))
-        {
-            anim.SetTrigger("CastSpell");
         }
     }
 
