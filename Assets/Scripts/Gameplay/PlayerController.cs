@@ -16,7 +16,9 @@ public class PlayerController : MonoBehaviour {
     private bool grounded;
 
     //References
+    [Header("References:")]
     public Transform yBotT;
+    public GameObject projectile1;
     private Rigidbody rb;
     private SphereCollider spColl;
 
@@ -27,10 +29,11 @@ public class PlayerController : MonoBehaviour {
     float horizontalInput, verticalInput;
     Vector3 movementDirection, velocity;
     bool playerMoving;
-	#endregion
-	
-	// Use this for initialization
-	void Start () {
+    #endregion
+
+    #region Core
+    // Use this for initialization
+    void Start () {
         rb = gameObject.GetComponent<Rigidbody>();
         spColl = gameObject.GetComponent<SphereCollider>();
 	}
@@ -40,8 +43,10 @@ public class PlayerController : MonoBehaviour {
         GroundChecking();
         Jump();
         Move();
+        Combat();
         Animate();
     }
+    #endregion
 
     #region Movement
     private void Move()
@@ -78,7 +83,7 @@ public class PlayerController : MonoBehaviour {
 
     private void Jump()
     {
-        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        if (grounded && Input.GetButton("Jump"))
         {
             anim.SetTrigger("Jump");
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -117,6 +122,27 @@ public class PlayerController : MonoBehaviour {
             grounded = false;
 
         Debug.DrawRay(raycastPosition.transform.position, Vector3.down * 0.3f, Color.red);
+    }
+    #endregion
+
+    #region Combat
+    private void Combat()
+    {
+        //Check inputs
+        if (Input.GetButton("Fire1"))
+        {
+            //Play animation
+            anim.SetTrigger("Spell1");
+            StartCoroutine(CastSpell());
+        }
+    }
+
+    IEnumerator CastSpell()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        //Cast projectile
+        Instantiate(projectile1, new Vector3(transform.position.x, transform.position.y, transform.position.z + 1.0f), transform.rotation);
     }
     #endregion
 }
