@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: cde6950b4cd01ed4e89352f775c168ee
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gravityFont: {fileID: 12800000, guid: 28ed1153d48f34485be1063881729e18, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
