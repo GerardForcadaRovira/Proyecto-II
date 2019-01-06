@@ -61,10 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CopyPosition.cs" />
     <Compile Include="Assets\Scripts\Gameplay\CameraController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\projectile1.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Menus\Buttons.cs" />
     <Compile Include="Assets\Scripts\Utilities\Sound.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Unity's Projects/Elemento/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -179,7 +179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -262,7 +262,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534669906
 MonoBehaviour:
@@ -278,17 +278,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockCursor: 0
   mouseSensitivity: 5
-  target: {fileID: 1060895984}
+  target: {fileID: 621973503}
   distFromTarget: 3
   pitchMinMax: {x: -40, y: 85}
   rotationSmoothTime: 0.12
---- !u!4 &1060895984 stripped
+--- !u!4 &621973503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 107059760112427540, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
     type: 3}
-  m_PrefabInstance: {fileID: 1263876973}
+  m_PrefabInstance: {fileID: 1218656755}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1263876973
+--- !u!1001 &1218656755
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -300,11 +300,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kyva
       objectReference: {fileID: 0}
-    - target: {fileID: 107059760112427540, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,7 +308,7 @@ PrefabInstance:
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.575
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
@@ -343,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
@@ -359,6 +354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3678963750649621412, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
+        type: 3}
+      propertyPath: yOffset
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cb34068189b5d4f8261efa7bbfcdbf, type: 3}
@@ -666,49 +666,5 @@ Transform:
   - {fileID: 1354442542}
   - {fileID: 1401530514}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2108402715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2108402717}
-  - component: {fileID: 2108402716}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2108402716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108402715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 261ed2bf5cfd0854484d5eb191f1afdd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds: []
---- !u!4 &2108402717
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108402715}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -20,7 +20,6 @@ namespace Elemento
 
         //References
         [Header("References:")]
-        public Transform yBotT;
         public GameObject projectile1;
         private Rigidbody rb;
         private SphereCollider spColl;
