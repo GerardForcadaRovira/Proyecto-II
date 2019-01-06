@@ -14,7 +14,7 @@ namespace Elemento
 
         private void Start()
         {
-            target = GameObject.Find("Player").GetComponent<Transform>();
+            target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             agent = GetComponent<NavMeshAgent>();
         }
         private void Update()
