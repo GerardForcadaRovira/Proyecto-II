@@ -300,20 +300,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kyva
       objectReference: {fileID: 0}
+    - target: {fileID: 107059760112427540, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3833473
+      value: 0.575
       objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.94
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 107059760705151771, guid: 46cb34068189b5d4f8261efa7bbfcdbf,
         type: 3}
