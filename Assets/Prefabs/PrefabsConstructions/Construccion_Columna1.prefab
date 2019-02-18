@@ -121,7 +121,11 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< Updated upstream
   m_Convex: 0
+=======
+  m_Convex: 1
+>>>>>>> Stashed changes
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: 837266c0e9356a1449ea3cdd9deb72bd, type: 3}
 --- !u!1 &1956225459371670
